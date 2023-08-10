@@ -1,6 +1,11 @@
 import Link from "next/link"
 
-import { RouteLinksProps } from "@/types/routesLink"
+export type RouteLinksProps = {
+  text: string
+  href: string
+  onClick?: () => void
+}
+
 
 export const RouteLinks = (props: RouteLinksProps) => {
   return (
