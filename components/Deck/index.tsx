@@ -5,7 +5,6 @@ import {
   Fragment,
   SetStateAction,
   SyntheticEvent,
-  useState,
 } from "react"
 import Image from "next/image"
 
@@ -48,7 +47,7 @@ const Deck = ({ repo, loader, setLoader }: IDeckProps) => {
   }
 
   return (
-    <>
+    <Fragment>
       <Card
         className={`max-w-3/4 rounded-lg border-none bg-cover bg-center bg-no-repeat opacity-0 shadow transition duration-1000 ${loader ? "opacity-100" : ""
           }`}
@@ -76,7 +75,7 @@ const Deck = ({ repo, loader, setLoader }: IDeckProps) => {
                   {name}
                 </CardTitle>
               </CardHeader>
-              <CardDescription className=" mt-3 flex flex-col gap-1">
+              <section className=" mt-3 flex flex-col gap-1 text-[#dededf]">
                 <p className="mb-3 text-base font-normal text-textNeutral md:text-lg">{description}</p>
                 <div className="flex items-center justify-start">
                   <span className="mr-2">Tecnologias usadas: </span>
@@ -86,7 +85,7 @@ const Deck = ({ repo, loader, setLoader }: IDeckProps) => {
                     </figure>
                   ))}
                 </div>
-              </CardDescription>
+              </section>
 
               <CardFooter className="mt-4 flex gap-4">
                 <a
@@ -110,7 +109,7 @@ const Deck = ({ repo, loader, setLoader }: IDeckProps) => {
           </div>
         </div>
       </Card>
-    </>
+    </Fragment>
   )
 }
 

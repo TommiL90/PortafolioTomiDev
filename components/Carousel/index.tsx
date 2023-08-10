@@ -51,7 +51,7 @@ const CarouselCards = ({ cardList, autoPlay }: CarouselCArdsProps) => {
 
   return (
     <Fragment>
-      <div className="relative h-full w-full rounded-lg md:w-3/4">
+      <section className="relative h-full w-full rounded-lg md:w-3/4">
         <Deck repo={selectedCard} loader={loader} setLoader={setLoader} />
 
         {/* <!-- Slider indicators --> */}
@@ -123,7 +123,7 @@ const CarouselCards = ({ cardList, autoPlay }: CarouselCArdsProps) => {
             <span className="sr-only">Next</span>
           </span>
         </button>
-      </div>
+      </section>
     </Fragment>
   )
 }

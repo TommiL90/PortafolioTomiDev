@@ -9,8 +9,7 @@ const SkillDescription = ({ status }: ISkillDescriptionProps) => {
     return (
       <section className="flex min-h-[10rem] w-full animate-fade flex-col items-start justify-center gap-4 overflow-auto p-4 transition-all">
         <h2 className="mt-6 text-xl font-bold">Soft Skills</h2>
-        <p className="mb-4 text-xl">
-          <ol className="flex flex-col gap-2">
+          <ol className="flex flex-col gap-2 mb-4 text-xl">
             <li> - Comunicação clara para entender requisitos.</li>
             <li> - Colaboração eficaz em equipe.</li>
             <li> - Vontade de aprender com feedback.</li>
@@ -19,7 +18,6 @@ const SkillDescription = ({ status }: ISkillDescriptionProps) => {
             <li> - Curiosidade por soluções inovadoras.</li>
             <li> - Resiliência ao superar desafios.</li>
           </ol>
-        </p>
       </section>
     )
   }

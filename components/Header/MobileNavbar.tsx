@@ -11,6 +11,7 @@ import {
 import { RouteLinks } from "@/components/RoutesLink"
 import { RiMenu3Line } from 'react-icons/ri';
 import { ThemeToggle } from "@/components/Theme-toggle";
+import ContactLinks from "../ContactLinks";
 
 
 const MobileNavbar = () => {
@@ -24,6 +25,9 @@ const MobileNavbar = () => {
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <ul className="flex flex-col items-center justify-center  overflow-hidden transition-all">
+          <li className="m-2 w-full p-2 text-center transition-all hover:scale-105">
+            <RouteLinks href="/" text="Inicio" />
+          </li>
           <li className="m-2 w-full p-2 text-center transition-all hover:scale-105">
             <SheetClose asChild>
               <RouteLinks href="/profile" text="Sobre mim" />
@@ -45,8 +49,11 @@ const MobileNavbar = () => {
             </SheetClose>
           </li>
         </ul>
-        <SheetFooter>
+        <SheetFooter className="mt-8 gap-6">
           <ThemeToggle />
+          <div className="flex flex-row items-center justify-around gap-4">
+            <ContactLinks />
+          </div>
         </SheetFooter>
       </SheetContent>
     </Sheet>
