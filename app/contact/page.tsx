@@ -38,7 +38,7 @@ export default function Contact() {
             </span>
             <a
               className="flex items-center text-2xl font-semibold transition-all ease-in hover:text-primary-foreground"
-              href="https://www.linkedin.com/in/renovatt"
+              href="https://www.linkedin.com/in/tomasbenjamin/"
               target="_blank"
               rel="noreferrer"
             >
