@@ -7,7 +7,7 @@ export interface ISkillDescriptionProps {
 const SkillDescription = ({ status }: ISkillDescriptionProps) => {
   if (!status.isHovered && status.isDefault) {
     return (
-      <section className="flex min-h-[10rem] w-full animate-fade flex-col items-start justify-center gap-4 overflow-auto p-4 transition-all">
+      <section className="flex min-h-[10rem] h-max w-full animate-fade flex-col items-start justify-center gap-4 overflow-auto p-4 transition-all">
         <h2 className="mt-6 text-xl font-bold">Soft Skills</h2>
           <ol className="flex flex-col gap-2 mb-4 text-xl">
             <li> - Comunicação clara para entender requisitos.</li>

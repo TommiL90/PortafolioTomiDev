@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/Theme-Provider"
 import { fontChakra } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { Footer } from "@/components/Footer"
-import { siteConfig } from "@/components/SkillIcon/config/site"
+import { siteConfig } from "@/config/site"
 
 export const metadata: Metadata = {
   title: {

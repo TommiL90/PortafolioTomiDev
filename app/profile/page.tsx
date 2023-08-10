@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <section className="flex h-full w-full max-w-[1400px] animate-fade flex-col items-center justify-center px-28 transition-all">
-      <article className="mt-8 flex h-auto max-h-[1400px] flex-col items-center justify-center md:w-full  md:flex-row md:justify-around">
+      <article className="mt-8 flex h-auto max-h-[1400px] flex-col items-center justify-center md:w-full  lg:flex-row md:justify-around">
         <Avatar className="h-80 w-80">
           <AvatarImage
             src={`https://github.com/tommil90.png`}

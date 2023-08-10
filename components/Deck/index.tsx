@@ -56,7 +56,7 @@ const Deck = ({ repo, loader, setLoader }: IDeckProps) => {
         <div className="rounded-lg bg-zinc-800 bg-opacity-[0.95]">
           <div className="grid grid-cols-6 items-center justify-center gap-6 md:grid-cols-12 md:gap-4">
             <div className="relative col-span-6 md:col-span-4">
-              <AspectRatio ratio={4 / 5} className="">
+              <AspectRatio ratio={4 / 5} className="md:hidden lg:block">
                 <Image
                   className="rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
                   src={require(`../../public/assets/${images[0]}`).default.src}

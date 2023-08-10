@@ -20,14 +20,14 @@ export default function IndexPage() {
   }, [index])
 
   return (
-    <section className="justify-cente flex min-h-full flex-1 items-center">
+    <section className="justify-center flex min-h-full flex-1 items-center">
       <div className="flex w-[95vw] max-w-[1400px] animate-fade flex-col-reverse items-center justify-center transition-all md:flex-row md:justify-around">
         <article className="mt-4 flex h-max w-full flex-col gap-4 md:mt-0 md:w-1/2 md:items-start">
           <p className="text-4xl">Hello World! 👋</p>
           <p className="mt-2 text-2xl leading-normal text-primary md:text-5xl">
             <i>Transformando Visões em Código</i>
           </p>
-          <h1 className='text-5xl font-bold leading-normal after:ml-2 after:animate-blink after:text-white after:content-["|"] md:ml-16 md:text-8xl'>
+          <h1 className='text-5xl font-bold leading-normal after:ml-2 after:animate-blink after:text-white after:content-["|"] md:ml-16 md:text-8xl md:z-50'>
             {textEffect}
           </h1>
         </article>

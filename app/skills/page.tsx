@@ -49,7 +49,7 @@ const SkillPage = () => {
           />
         ))}
       </ul>
-      <div className="relative flex h-auto w-full items-center justify-center overflow-auto rounded-md bg-backgroundSecondary md:top-32 md:h-80 md:w-[50%] md:overflow-hidden md:p-4">
+      <div className="md:sticky flex h-auto w-full items-center justify-center overflow-auto rounded-md bg-backgroundSecondary md:top-56 md:h-80 md:w-[50%] md:p-4">
         <SkillDescription status={status} />
       </div>
     </>
