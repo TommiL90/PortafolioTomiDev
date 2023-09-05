@@ -44,7 +44,7 @@ const CarouselCards = ({ cardList, autoPlay }: CarouselCArdsProps) => {
     if (autoPlay) {
       const interval = setInterval(() => {
         selectNewImage(selectedIndex, cardList)
-      }, 3000)
+      }, 3300)
       return () => clearInterval(interval)
     }
   })
