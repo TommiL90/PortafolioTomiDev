@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontChakra.className
           )}
         >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="relative flex min-h-screen flex-col">
               <Header />
               <main className="container flex min-h-full flex-1 flex-col">
