@@ -93,8 +93,8 @@ export const reposBack: TRepos = [
     images: ["apiCover/api3.png"],
     techs: ["Python", "Django", "PostgreSQL"],
     deploy:
-      "https://react-typescript-hamburgueria-tommil90-tommil90.vercel.app/login",
-    repository: "https://github.com/TommiL90/react-typescript-hamburgueria",
+      "https://e-commerce29-t14.onrender.com/api/docs/swagger-ui/",
+    repository: "https://github.com/TommiL90/e-commerce-API-t14",
   },
   {
     name: "KI-Móveis",
@@ -104,7 +104,7 @@ export const reposBack: TRepos = [
       "apiCover/api4.png"
     ],
     techs: ["Typescript", "NodeJS", "TypeORM", "PostgreSQL", "Jest"],
-    deploy: "https://to-do-app-tommil90.vercel.app/login",
-    repository: "https://github.com/TommiL90/toDoApp",
+    deploy: "https://tommil90.github.io/kimoveis-TommiL90/",
+    repository: "https://github.com/TommiL90/kimoveis-TommiL90",
   },
 ]
