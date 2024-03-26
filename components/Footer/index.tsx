@@ -12,7 +12,7 @@ export const Footer = () => {
           | Powered by
           <Link
             className="flex items-center pl-4 font-bold text-foreground hover:text-primary-foreground"
-            href="https://www.linkedin.com/in/renovatt"
+            href="https://www.linkedin.com/in/tomasbenjamin"
             target="_blank"
           >
             Tomás Benjamin
