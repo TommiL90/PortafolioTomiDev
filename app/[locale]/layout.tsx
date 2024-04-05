@@ -10,8 +10,8 @@ import { fontChakra, fontMono } from '@/config/fonts'
 
 import { Footer } from '@/components/footer'
 import { BackgroundBeams } from '@/components/ui/background-beams'
-import { Providers } from './providers'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
+import { Providers } from './providers'
 
 export const viewport: Viewport = {
   themeColor: [
@@ -60,7 +60,7 @@ export default function RootLayout({
         )}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
+          <Providers attribute="class" defaultTheme="dark">
             <div className="relative z-10 flex h-screen flex-col">
               <Header />
               <main className="container mx-auto max-w-7xl flex-grow">

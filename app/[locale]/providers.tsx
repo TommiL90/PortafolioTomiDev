@@ -6,16 +6,9 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
 import { SessionProvider } from 'next-auth/react'
 
-export interface ProvidersProps {
-  children: React.ReactNode
-  themeProps?: ThemeProviderProps
-}
-
-export function Providers({ children, themeProps }: ProvidersProps) {
-  // const router = useRouter()
-
+export function Providers({ children, ...props }: ThemeProviderProps) {
   return (
-    <NextThemesProvider {...themeProps}>
+    <NextThemesProvider {...props}>
       <SessionProvider>{children}</SessionProvider>
     </NextThemesProvider>
   )

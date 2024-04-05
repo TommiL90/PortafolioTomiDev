@@ -11,7 +11,7 @@ import { auth } from './lib/auth'
 const intlMiddleware = createIntlMiddleware({
   locales,
   localePrefix: 'always',
-  defaultLocale: 'en',
+  defaultLocale: 'pt',
 })
 
 // const authMiddleware = withAuth(
