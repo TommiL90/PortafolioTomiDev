@@ -1,0 +1,63 @@
+// import { Link } from '@nextui-org/link'
+// import { Snippet } from '@nextui-org/snippet'
+// import { Code } from '@nextui-org/code'
+// import { button as buttonStyles } from '@nextui-org/theme'
+// import { siteConfig } from '@/config/site'
+// import { title, subtitle } from '@/components/primitives'
+// import { GithubIcon } from '@/components/icons'
+// import { Button } from '@nextui-org/button'
+
+// export default function DocsPage() {
+//   return (
+//     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+//       <div className="inline-block max-w-lg justify-center text-center">
+//         <h1 className={title()}>Make&nbsp;</h1>
+//         <h1 className={title({ color: 'violet' })}>beautiful&nbsp;</h1>
+//         <br />
+//         <h1 className={title()}>
+//           websites regardless of your design experience.
+//         </h1>
+//         <h2 className={subtitle({ class: 'mt-4' })}>
+//           Beautiful, fast and modern React UI library.
+//         </h2>
+//         <Button
+//           disableRipple
+//           className="relative overflow-visible rounded-full bg-primary/30 px-12 shadow-xl after:absolute after:inset-0 after:z-[-1] after:rounded-full after:bg-primary/40 after:transition after:!duration-500 after:content-[''] hover:-translate-y-1 hover:after:scale-150 hover:after:opacity-0"
+//           size="lg"
+//         >
+//           Press me
+//         </Button>
+//       </div>
+
+//       <div className="flex gap-3">
+//         <Link
+//           isExternal
+//           href={siteConfig.links.docs}
+//           className={buttonStyles({
+//             color: 'primary',
+//             radius: 'full',
+//             variant: 'shadow',
+//           })}
+//         >
+//           Documentation
+//         </Link>
+//         <Link
+//           isExternal
+//           className={buttonStyles({ variant: 'bordered', radius: 'full' })}
+//           href={siteConfig.links.github}
+//         >
+//           <GithubIcon size={20} />
+//           GitHub
+//         </Link>
+//       </div>
+
+//       <div className="mt-8">
+//         <Snippet hideSymbol hideCopyButton variant="flat">
+//           <span>
+//             Get started by editing <Code color="primary">app/page.tsx</Code>
+//           </span>
+//         </Snippet>
+//       </div>
+//     </section>
+//   )
+// }
