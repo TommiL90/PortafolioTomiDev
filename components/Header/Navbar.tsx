@@ -1,38 +1,35 @@
+import { auth } from '@/lib/auth'
+import { RouteLinks } from '../route-link'
+import { SignIn } from '../signin'
 
-import { RouteLinks } from "@/components/RoutesLink"
-import { ThemeToggle } from "@/components/Theme-toggle"
-import MobileNavbar from "./MobileNavbar"
-
-export type MenuTypeProps = {
-  modal?: boolean
-  openModal?: () => void
-  closeModal?: () => void
-}
-
-export const Navbar = ({ openModal }: MenuTypeProps) => {
+export const Navbar = async () => {
+  const session = await auth()
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="hidden items-center justify-between md:flex">
       <ul className="hidden md:flex md:items-center md:justify-between">
         <li className="m-2 p-2">
           <RouteLinks href="/" text="Inicio" />
         </li>
+
         <li className="m-2 p-2">
-          <RouteLinks href="profile" text="Sobre mim" />
+          <RouteLinks href="/profile" text="Sobre mim" />
         </li>
+
         <li className="m-2 p-2">
           <RouteLinks href="/projects" text="Projetos" />
         </li>
+
         <li className="m-2 p-2">
           <RouteLinks href="/skills" text="Skills" />
         </li>
+
         <li className="m-2 p-2">
           <RouteLinks href="/contact" text="Contato" />
         </li>
+        <li className="m-2 p-2">
+          {session ? <RouteLinks href="/admin" text="Admin" /> : <SignIn />}
+        </li>
       </ul>
-      <MobileNavbar />
-      <span className="hidden md:block">
-        <ThemeToggle />
-      </span>
     </nav>
   )
 }
